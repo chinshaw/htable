@@ -1,4 +1,5 @@
-package com.ch.htable;
+package com.ch.htable.core;
+
 
 class AnyColumnMeta<T> extends ColumnMeta<AnyColumn<T>> {
 

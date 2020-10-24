@@ -1,4 +1,4 @@
-package com.ch.htable;
+package com.ch.htable.core;
 
 import java.util.function.BiConsumer;
 import java.util.function.Consumer;

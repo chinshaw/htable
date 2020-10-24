@@ -1,4 +1,4 @@
-package com.ch.htable;
+package com.ch.htable.core;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;

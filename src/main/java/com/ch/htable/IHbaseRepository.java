@@ -1,5 +1,7 @@
 package com.ch.htable;
 
+import com.ch.htable.core.HEntityManager;
+
 public interface IHbaseRepository<E> {
 
     default void save(E entity) {
@@ -13,5 +15,4 @@ public interface IHbaseRepository<E> {
     HEntityManager getEntityManager();
 
     Class<E> getClassType();
-
 }

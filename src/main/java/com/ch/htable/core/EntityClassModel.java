@@ -1,8 +1,10 @@
-package com.ch.htable;
+package com.ch.htable.core;
 
+import com.ch.htable.HBaseException;
+import com.ch.htable.annotations.HColumn;
+import com.ch.htable.annotations.HId;
+import com.ch.htable.annotations.HTable;
 import com.google.common.base.MoreObjects;
-import org.apache.hadoop.hbase.client.Put;
-import org.apache.hadoop.hbase.util.Bytes;
 
 import java.util.Collection;
 

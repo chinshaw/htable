@@ -1,4 +1,6 @@
-package com.ch.htable;
+package com.ch.htable.annotations;
+
+import com.ch.htable.core.ColumnConverter;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.Target;
@@ -9,10 +11,7 @@ import static java.lang.annotation.RetentionPolicy.RUNTIME;
 
 @Retention(RUNTIME)
 @Target({FIELD, METHOD})
-public @interface HColumn {
-
-    String name();
+public @interface HId {
 
     Class<? extends ColumnConverter> converter();
-
 }

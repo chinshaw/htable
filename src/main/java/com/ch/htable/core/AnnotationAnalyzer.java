@@ -1,6 +1,10 @@
-package com.ch.htable;
+package com.ch.htable.core;
 
-import com.ch.htable.ValueAccessor.MethodAccessor;
+import com.ch.htable.annotations.HAnyColumn;
+import com.ch.htable.annotations.HColumn;
+import com.ch.htable.annotations.HId;
+import com.ch.htable.annotations.HTable;
+import com.ch.htable.core.ValueAccessor.MethodAccessor;
 
 import java.lang.reflect.Method;
 import java.util.concurrent.ConcurrentHashMap;

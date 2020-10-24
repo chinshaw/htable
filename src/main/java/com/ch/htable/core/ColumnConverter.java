@@ -1,4 +1,4 @@
-package com.ch.htable;
+package com.ch.htable.core;
 
 //import com.apc.its.fido.ds.client.AnyCollection;
 //import com.apc.its.fido.ds.client.Matrix;
@@ -80,7 +80,7 @@ public interface ColumnConverter<T> {
             return fromBytes(bytes);
         }
     }
-    
+
     class StringColumn extends BaseConverter<String> {
         StringColumn() {
             super(Bytes::toBytes, Bytes::toString);

@@ -1,4 +1,6 @@
-package com.ch.htable;
+package com.ch.htable.annotations;
+
+import com.ch.htable.core.ColumnConverter;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.Target;

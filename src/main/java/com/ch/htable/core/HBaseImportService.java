@@ -1,4 +1,4 @@
-package com.ch.htable;
+package com.ch.htable.core;
 
 import com.google.common.base.Stopwatch;
 import org.slf4j.Logger;

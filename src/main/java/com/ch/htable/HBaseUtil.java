@@ -21,16 +21,4 @@ public class HBaseUtil {
         return Arrays.stream(objects).map(Objects::toString)
                 .collect(Collectors.joining(":"));
     }
-
-
-    /**
-     * This is used for other tables. Unfortunately we didn't coordinate the character sequence.
-     * @param objects
-     * @return String key concatenated with underscores
-     */
-    public static String keyUnderscore(Object ... objects) {
-        return Arrays.stream(objects).map(Objects::toString)
-                .collect(Collectors.joining("_"));
-    }
-
 }

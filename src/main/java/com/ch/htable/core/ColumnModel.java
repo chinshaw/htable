@@ -1,4 +1,4 @@
-package com.ch.htable;
+package com.ch.htable.core;
 
 import java.util.Collection;
 import java.util.HashMap;

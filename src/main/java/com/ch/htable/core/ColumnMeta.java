@@ -1,5 +1,6 @@
-package com.ch.htable;
+package com.ch.htable.core;
 
+import com.ch.htable.annotations.HColumn;
 import org.apache.hadoop.hbase.util.Bytes;
 
 /**

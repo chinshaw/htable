@@ -1,4 +1,4 @@
-package com.ch.htable;
+package com.ch.htable.core;
 
 /**
  * Anycolumn is a simple class that allows an entity implementation to handle hbase column values.

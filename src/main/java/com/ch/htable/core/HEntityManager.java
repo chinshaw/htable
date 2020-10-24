@@ -1,5 +1,6 @@
-package com.ch.htable;
+package com.ch.htable.core;
 
+import com.ch.htable.*;
 import com.google.common.annotations.Beta;
 import org.apache.hadoop.hbase.Cell;
 import org.apache.hadoop.hbase.CellUtil;
@@ -18,7 +19,7 @@ import java.util.Optional;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-import static com.ch.htable.LambdaFunctionUtil.uncheck;
+import static com.ch.htable.core.LambdaFunctionUtil.uncheck;
 import static com.google.common.base.Preconditions.*;
 import static com.google.common.collect.Iterables.partition;
 import static java.util.stream.StreamSupport.stream;
