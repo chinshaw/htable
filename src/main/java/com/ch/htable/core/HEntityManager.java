@@ -218,9 +218,8 @@ public class HEntityManager {
 
     /**
      * This will construct a list of puts based on a collection of entities. It will convert the entity to a put
-     * using the column information from the entity com.apc.its.services.fido.geomodel.
-     *
-     * @param m        The entity com.apc.its.services.fido.geomodel of the entity.
+     * using the column information from the entity.
+     *.
      * @param entities The Collection of entities that will be converted to puts.
      * @param <T>      The type of the entity that is being passed in.
      * @return List of put instances that are ready to be published to hbase.
@@ -246,18 +245,18 @@ public class HEntityManager {
     /**
      * Implementation of entity to put that will convert the entity to a put that can be saved into
      * hbase. This will iterate through all the columns and set the values and qualifiers on the put using
-     * the entity com.apc.its.services.fido.geomodel.
+     * the entity.
      * <p>
-     * This method will validate that the entity com.apc.its.services.fido.geomodel type and entity class match before proceeding.
+     * This method will validate that the entity type and entity class match before proceeding.
      *
-     * @param m      The entity com.apc.its.services.fido.geomodel of the entity.
+     * @param m      The entity
      * @param entity The entity instance that will be converted to the put.
      * @param <T>    The type of the entity.
-     * @return Put that was created from the entity com.apc.its.services.fido.geomodel
+     * @return Put that was created from the entity
      */
     protected static <T> Put entityToPut(EntityClassModel m, T entity) {
         checkArgument(m.getEntityType().isAssignableFrom(entity.getClass()),
-                "Entity com.apc.its.services.fido.geomodel %s is not assignable to class entity type %s", m.getEntityType(), entity.getClass());
+                "Entity %s is not assignable to class entity type %s", m.getEntityType(), entity.getClass());
         final ColumnModel cm = m.getColumnModel();
         checkState(cm.size() > 0, "Invalid number of columns for entity %s", entity);
         final Put put = new Put(m.getIdValue(entity));
@@ -317,9 +316,9 @@ public class HEntityManager {
     }
 
     /**
-     * Get the table from the entity com.apc.its.services.fido.geomodel. This will use the @HTable annotation from the com.apc.its.services.fido.geomodel to look up
+     * Get the table from the entity. This will use the @HTable annotation from the entity to look up
      * the table. This does have an added check to validate that the table is name is present.
-     * @param entityModel The entity com.apc.its.services.fido.geomodel used to decipher the table name.
+     * @param entityModel The entity used to decipher the table name.
      * @return The table instance that can be used to make queries.
      */
     private Table getTable(final EntityClassModel entityModel) {
@@ -335,11 +334,11 @@ public class HEntityManager {
 
     /**
      * Convert a result to an entity. This will look at the result and set the fields using the column
-     * meta data stored in the entity com.apc.its.services.fido.geomodel. It will automatically convert the value using the value accessor
+     * meta data stored in the entity. It will automatically convert the value using the value accessor
      * that was registered for the column.
      *
      * @param result Hbase result object.
-     * @param m      The entity com.apc.its.services.fido.geomodel for the entity
+     * @param m      The entity
      * @param <T>    The type of the entity that will be returned.
      * @return A newly constructed entity with values set.
      */

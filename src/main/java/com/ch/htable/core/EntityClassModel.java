@@ -11,8 +11,6 @@ import java.util.Collection;
 import static com.google.common.base.Preconditions.checkState;
 
 /**
- * Entity com.apc.its.services.fido.geomodel is a descriptor for an entity type. It contains meta data used for table names,
- * columns etc.
  * @param <T> Class type of the backing entity.
  */
 class EntityClassModel<T> {
